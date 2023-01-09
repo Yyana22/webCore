@@ -5,6 +5,10 @@
   font-family: 'TT Lakes';
 }
 
+body {
+  height: 100vh;
+}
+
 ul {
   list-style: none;
 }
@@ -129,6 +133,7 @@ ul {
 }
 
 .main {
+  height: 100%;
   background-color: #F8F8F8;
 }
 
@@ -196,6 +201,7 @@ ul {
     margin-right: 15px;
   }
   .main {
+    padding-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,6 +214,7 @@ ul {
     color: #1B1C21;
   }
   .main img {
+    height: 307px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
