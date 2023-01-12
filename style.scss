@@ -17,16 +17,6 @@ ul{
     max-width: 290px;
 }
 
-.wrapper1 {
-    align-items: center;
-    width: 100%;
-    margin: 18px 0;
-    display: flex;
-    justify-content: space-between;
-    div:not(:last-child){
-        margin-right: 15px;
-    }
-}
 .comments{
     font-size: 16px;
     line-height: 24px;
@@ -35,19 +25,52 @@ ul{
     margin-left: 32px;
     margin-top: 15px;
 }
-
-.wrapper2{
-    display: none;
-}
 .header {
-    margin: 0 15px;
     align-items: center;
-    &__border {
+    width: 100%;
+    margin: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    div:not(:last-child){
+        margin-right: 15px;
+    }
+    :not(:last-child){
+        margin-right: 20px;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        :not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        :not(:last-child){
+            margin-right: 15px;
+        }
+    }
+    &__call{
+        display: none;
+    }
+    &__chat{
+        display: none;
+    }
+    &__profile{
+        display: none;
+    }
+    &__border1 {
+        display: none;
         border: 2px solid #EAEAEA;
         border-radius: 1px;
         height: 32px;
     }
-    
+    &__border2 {
+        border: 2px solid #EAEAEA;
+        border-radius: 1px;
+        height: 32px;
+    }
 }
 
 .servise{
@@ -134,16 +157,6 @@ ul{
 }
 
 @media (min-width: 768px) {
-    .wrapper1 {
-        display: none;
-    }
-    .wrapper2 {
-        display: flex;
-        width: 100%;
-        margin: 18px 0;
-        display: flex;
-        justify-content: space-between;
-    }
     .header {
         &__right{
             display: flex;
@@ -158,6 +171,21 @@ ul{
             :not(:last-child){
                 margin-right: 15px;
             }
+        }
+        &__call{
+            display: flex;
+        }
+        &__chat{
+            display: flex;
+        }
+        &__profile{
+            display: flex;
+        }
+        &__border1 {
+            display: flex;
+            border: 2px solid #EAEAEA;
+            border-radius: 1px;
+            height: 32px;
         }
     }
     .main  {
@@ -185,7 +213,6 @@ ul{
         margin-right: 32px;
     }
     .servise__list {
-        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -203,6 +230,9 @@ ul{
 }
 
 @media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
     .main{
         &__text{
             width: 490px;
