@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'TT Lakes';
+  overflow: hidden;
 }
 
 body {
@@ -129,12 +130,21 @@ ul {
   color: #1B1C21;
 }
 
+.servise__wrapper {
+  position: absolute;
+  width: 100%;
+}
+
 .servise__list {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 16px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  position: relative;
+  overflow-x: auto;
 }
 
 .servise__list li {
