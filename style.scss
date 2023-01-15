@@ -8,6 +8,7 @@
 }
 body{
     height: 100vh;
+    overflow: hidden;
 }
 ul{
     list-style: none;
@@ -97,15 +98,17 @@ ul{
         }
     }
     &__wrapper{
-        position: absolute;
         width:100%;
+        overflow-x: auto;
+    }
+    ::-webkit-scrollbar {
+        visibility: hidden;
     }
     &__list {
     display: flex;
     margin-left: 16px;
     width: max-content;
     position:relative;
-    overflow-x:auto;
         li{
             display: inline;
             font-size: 16px;

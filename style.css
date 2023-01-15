@@ -8,6 +8,7 @@
 
 body {
   height: 100vh;
+  overflow: hidden;
 }
 
 ul {
@@ -131,8 +132,12 @@ ul {
 }
 
 .servise__wrapper {
-  position: absolute;
   width: 100%;
+  overflow-x: auto;
+}
+
+.servise ::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 .servise__list {
@@ -144,7 +149,6 @@ ul {
   width: -moz-max-content;
   width: max-content;
   position: relative;
-  overflow-x: auto;
 }
 
 .servise__list li {
