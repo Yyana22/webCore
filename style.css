@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: 'TT Lakes';
-  overflow: hidden;
 }
 
 body {
@@ -17,6 +16,10 @@ ul {
 .container {
   margin: 0 auto;
   max-width: 290px;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 .comments {
@@ -364,5 +367,121 @@ ul {
   .servise__head-right div img {
     margin-left: 8px;
   }
+}
+
+.burger-menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 320px;
+  overflow-y: auto;
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.burger-menu__head {
+  height: 80px;
+  padding: 18px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-menu__head-right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 78px;
+}
+
+.burger-menu__head-right div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.burger-menu__head-close:hover {
+  opacity: 0.8;
+}
+
+.burger-menu__head-search:hover {
+  opacity: 0.8;
+}
+
+.burger-menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.burger-menu__list {
+  margin-bottom: 268px;
+}
+
+.burger-menu__list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-menu__list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger-menu__list > li:not(.active) {
+  margin-left: 24px;
+}
+
+.burger-menu__foot {
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+.info-link:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.info-link:last-child {
+  margin-top: 40px;
+}
+
+.info-link > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-link > ul > :not(:last-child) {
+  margin-right: 16px;
+}
+
+.info-link > ul > li > img:hover {
+  opacity: 0.8;
+}
+
+.info-link > ul > li[class='active'] {
+  color: #7E7E82;
+}
+
+.info-link__number {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+}
+
+.burger-menu__link.active > .border {
+  display: block;
+  margin-right: 20px;
+  height: 22px;
+  border: 2px solid #41F6D7;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 /*# sourceMappingURL=style.css.map */
