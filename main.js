@@ -22,7 +22,7 @@ showMore.addEventListener('click', () => {
         showButton.textContent = 'Показать всё';
     }
 })
-if(window.innerWidth >= 768 ){
+if(window.innerWidth >= 768){
     console.log('h')
     htmlCard.className = 'last-card hidden-el card card--position hide-card';
     htmlCard.innerHTML = '<img src="./img/apple.svg" alt="logo" class="card__logo"><img src="./img/go.svg" alt="logo" class="card__go">'
