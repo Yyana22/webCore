@@ -643,6 +643,9 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .go-down {
+    height: 500px;
+  }
   .card {
     height: 72px !important;
   }
@@ -673,6 +676,9 @@ ul {
     -webkit-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms;
   }
+  .swiper.go-down {
+    height: 380px;
+  }
   .show-more {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -681,6 +687,9 @@ ul {
 }
 
 @media (min-width: 1150px) {
+  .swiper.go-down {
+    height: 300px;
+  }
   .swiper-wrapper {
     -ms-grid-columns: 240px 240px 240px 240px;
         grid-template-columns: 240px 240px 240px 240px;

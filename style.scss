@@ -490,6 +490,7 @@ ul{
     display: flex;
 }
 
+
 @media (max-width: 767px){
     .card{
         width: 100%;
@@ -506,6 +507,9 @@ ul{
     }
 }
 @media (min-width: 768px) {
+    .go-down{
+        height: 500px;
+    }
     .card{
         height: 72px !important;
     }
@@ -534,12 +538,20 @@ ul{
         height: 240px;
         transition: all ease-in-out 300ms;
     }
+
+    .swiper.go-down{
+        height: 380px;
+    }
+
     .show-more {
         display: flex;
     }
 }
 
 @media (min-width: 1150px) {
+    .swiper.go-down{
+        height: 300px;
+    }
     .swiper-wrapper {
         grid-template-columns: 240px 240px 240px 240px;
     }

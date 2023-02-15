@@ -4,13 +4,15 @@ const showMore = document.querySelector('.show-more');
 const itemsCount = document.querySelectorAll('.card').length;
 const cards = document.querySelectorAll('.swiper-wrapper > .card');
 const wrap = document.querySelector('.swiper-wrapper');
+const slider = document.querySelector('.swiper');
+
 
 let htmlCard = document.createElement('div');
 
-console.log(htmlCard);
 showMore.addEventListener('click', () => {
     showLess.classList.toggle('show-more__icon');
-    showButton.classList.toggle('hide-btn');
+    showButton.className+='hide-btn';
+    slider.classList.toggle('go-down');
     const arr = Array.from(document.querySelectorAll('.swiper-wrapper > .card'));
     arr.forEach(el => el.classList.toggle('is-visiable'));
 
@@ -22,21 +24,14 @@ showMore.addEventListener('click', () => {
 })
 if(window.innerWidth >= 768 ){
     console.log('h')
-htmlCard.className = 'last-card hidden-el card card--position';
-htmlCard.innerHTML = '<img src="./img/apple.svg" alt="logo" class="card__logo"><img src="./img/go.svg" alt="logo" class="card__go">'
-wrap.appendChild(htmlCard);
-console.log(wrap);
+    htmlCard.className = 'last-card hidden-el card card--position hide-card';
+    htmlCard.innerHTML = '<img src="./img/apple.svg" alt="logo" class="card__logo"><img src="./img/go.svg" alt="logo" class="card__go">'
+    wrap.appendChild(htmlCard);
     for(let i = 6; i < cards.length; i++){
         cards[i].classList.add('hide-card');
     }
-}
 
-if(window.innerWidth >= 1150){
-    for(let i = 8; i <= cards.length; i++){
-        cards[i].classList.add('hide-card');
-    }
 }
-const slider = document.querySelector('.swiper');
 
 let mySwiper;
 function mobileSlide(){
