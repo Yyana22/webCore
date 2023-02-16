@@ -645,6 +645,8 @@ ul {
 @media (min-width: 768px) {
   .go-down {
     height: 500px;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
   }
   .card {
     height: 72px !important;

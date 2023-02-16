@@ -16,7 +16,7 @@ showMore.addEventListener('click', () => {
     const arr = Array.from(document.querySelectorAll('.swiper-wrapper > .card'));
     arr.forEach(el => el.classList.toggle('is-visiable'));
 
-    if(showButton.classList.contains('hide-btn')){
+    if(showButton.classList.contains(' hide-btn')){
         showButton.textContent = 'Скрыть';
     } else {
         showButton.textContent = 'Показать всё';
