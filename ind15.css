@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+}
+
+.block15 {
+  background: #F8F8F8;
+}
+
+.block15__title {
+  padding: 16px;
+  height: 48px;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7E7E82;
+  margin-bottom: 16px;
+}
+
+.swiper {
+  padding-top: 24px;
+  margin-left: 16px;
+}
+
+.swiper-wrapper.list__hidden {
+  height: 130px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.last-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 224px;
+  height: 72px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.card__logo {
+  margin-left: 16px;
+}
+
+.card__go {
+  position: absolute;
+  right: 16px;
+  margin: 20px 0px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.block15__shadow {
+  height: 81px;
+  position: absolute;
+  width: 100px;
+  right: 0%;
+  top: 16px;
+  z-index: 100;
+  background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.01)));
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.01) 100%);
+}
+
+.swiper-pagination .swiper-pagination {
+  position: absolute;
+  z-index: 10;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #DDDDDD;
+  margin-right: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #B5B6BC;
+  opacity: 1;
+}
+
+.show-more {
+  display: none;
+}
+
+.last-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 88px;
+  padding: 16px;
+}
+
+@media (max-width: 767px) {
+  .repair-brands__title {
+    padding: 16px 16px;
+  }
+  .card--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .block15__shadow {
+    display: none;
+  }
+  .block15__title {
+    height: 56px;
+    padding: 16px;
+  }
+  .swiper {
+    height: 340px;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+  }
+  .list__hidden {
+    height: 174px;
+  }
+  .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 240px 240px 240px;
+        grid-template-columns: 240px 240px 240px;
+    gap: 16px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .show-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F8F8F8;
+    padding: 8px 39px 16px;
+    -webkit-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+  }
+  .show-less__icon {
+    margin-right: 16px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+  }
+  .show-more__icon {
+    margin-right: 16px;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+  }
+  .show-more__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #1B1C21;
+    font-family: 'TTLakes-Medium';
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1120px) {
+  .block15__title {
+    padding: 16px 32px;
+  }
+  .brands-catalog {
+    height: 280px;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+  }
+  .swiper.list__hidden {
+    height: 152px;
+  }
+  .swiper {
+    height: 240px;
+  }
+  .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 240px 240px 240px 240px;
+        grid-template-columns: 240px 240px 240px 240px;
+    margin-left: 32px;
+  }
+  .swiper-slide.card {
+    margin: 0 32px 8px 0;
+    width: 240px;
+  }
+  .card--position {
+    position: relative;
+    top: -124px;
+    left: 278px;
+    width: 240px;
+    margin-right: 21px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .show-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F8F8F8;
+    padding: 8px 50px 16px;
+    -webkit-transition: all ease-in-out 200s;
+    transition: all ease-in-out 200s;
+  }
+  .show-less__icon {
+    margin-right: 16px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+  }
+  .show-more__icon {
+    margin-right: 16px;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+  }
+  .show-more__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #1B1C21;
+    font-family: 'TTLakes-Medium';
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=ind15.css.map */
